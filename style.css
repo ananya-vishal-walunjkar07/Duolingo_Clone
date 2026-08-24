@@ -1,0 +1,123 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#101d22;
+    color:white;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    display: flex;
+    min-height:100vh;
+}
+
+.left-sidebar {
+    width: 235px;
+    border-right: 2px solid #26363e;
+    padding: 25px 15px;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    paddiing: 25px;
+    
+}
+
+.right-sidebar {
+    width:340px;
+    border-left:2px solid #26363e;
+    padding: 15px;
+}
+
+.logo {
+    color: #58cc02;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 15px 30px;
+}
+
+.side-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 12px;
+}
+
+.nav-item:hover {
+    background-color: #1c2b31;
+
+}
+
+.nav-item.active {
+    background-color: #26363e;
+    border: 2px solid #4ba3d9;
+}
+
+.nav-item span:first child {
+    font-size: 22px;
+}
+
+.chess-card {
+    margin-top: 25px;
+    border: 2px solid #31434c;
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.chess-icon {
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.chess-card h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.lesson-header {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #58cc02;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justidy-content: space-between;
+    align-items: center;
+}
+
+.section-into p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+.section-info h1 {
+    font-size: 20px;
+}
+
+.guidebook-button {
+    background-color: transparent;
+    border: 2px solid #46a901;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
