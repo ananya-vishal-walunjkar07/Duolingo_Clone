@@ -1,2 +1,2 @@
-# Duolingo_Clone
-Goal is to be able to create the Duolingo clone. I will keep adding more functions and features as i learn. Currently make the dashboard with just html and css.
+# Duolingo_Clone-A HTML CSS PROJECT
+tHE goal is to be able to create a Duolingo clone. Aim to add more features as l learn. Currently making the homepage/dashboard with just html and css.
