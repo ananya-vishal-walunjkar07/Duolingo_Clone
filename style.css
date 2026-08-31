@@ -1,2 +1,143 @@
-
+*{
+    box-sizing: border-box;
 }
+ 
+body{
+    margin:0;
+    background-color: #111f24
+}
+
+.page-layout {
+    display: flex;
+    
+}
+
+.sidebar {
+    width: 234px;
+    min-height: 100vh;
+    border-right: 2px solid #33454d;
+}
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #58cc02;
+    padding: 28px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 18px;
+    margin: 4px 14px;
+    color: #f1f5f6;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-item.active {
+    border: 2px solid #49a8d8;
+    border-radius: 12px;
+    background-color: #1d3037;
+}
+
+.nav-icon {
+    font-size: 22px;
+    width: 28px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: #111f24;
+    font-family: Arial, sans-serif;
+}
+
+.unit-header {
+    width: 550px;
+    height: 84px;
+    margin: 22px auto 0;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 14px 16px;
+    background-color: #ff9600;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unit-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.unit-info h1 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.guidebook-button {
+    height: 48px;
+    padding: 0 16px;
+    border: 2px solid #d47c00;
+    border-radius: 14px;
+    background-color: #ff9f0a;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-heading {
+    width: 550px;
+    margin: 48px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.heading-line {
+    flex: 1;
+    height: 2px;
+    background-color: #33454d;
+}
+
+.section-heading span {
+    color: #526970;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.top-stats {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    position: absolute;
+    top: 8px;
+    right: 280px;
+}
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+    position: relative;
+}
+
+.right-sidebar {
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    width: 350px;
+}
+
