@@ -141,3 +141,29 @@ body {
     width: 350px;
 }
 
+.super-card {
+    border: 2px solid #33454d;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.super-label {
+    color: #19bff5;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.super-card h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.league-card {
+    border: 2px solid #33454d;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+}
