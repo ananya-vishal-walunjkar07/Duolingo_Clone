@@ -167,3 +167,52 @@ body {
     padding: 20px;
     color: white;
 }
+
+.league-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.league-header h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.league-header span {
+    color: #19bff5;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.league-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color:white;
+}
+
+.league-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #403b46;
+    flex-shrink: 0;
+}
+
+.league-content strong {
+    font-size: 15px;
+}
+
+.league-content strong span {
+    color: #58cc02;
+}
+
+.league-content p {
+    margin: 8px 0 0;
+    color: #c5d0d4;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
