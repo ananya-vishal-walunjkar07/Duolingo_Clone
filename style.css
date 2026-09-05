@@ -216,3 +216,56 @@ body {
     line-height: 1.4;
 }
 
+.daily-card {
+    border: 2px solid #33454d;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    margin-top: 16px;
+}
+
+.daily-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.daily-header h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.daily-header span {
+    color: #19bff5;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.quest {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.quest-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: #403b46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.quest-info strong {
+    font-size: 15px;
+}
+
+.quest-info p {
+    margin: 5px 0 0;
+    color: #aebdc2;
+    font-size: 13px;
+}
