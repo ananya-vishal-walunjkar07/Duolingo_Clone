@@ -1,27 +1,32 @@
-*{
+* {
     box-sizing: border-box;
 }
- 
-body{
-    margin:0;
-    background-color: #111f24
+
+body {
+    margin: 0;
+    background-color: #111f24;
+    font-family: Arial, sans-serif;
 }
 
 .page-layout {
     display: flex;
-    
+    min-height: 100vh;
 }
 
 .sidebar {
-    width: 234px;
+    width: 252px;
     min-height: 100vh;
     border-right: 2px solid #33454d;
+    flex-shrink: 0;
 }
 
 .main-content {
     flex: 1;
     min-height: 100vh;
+    position: relative;
 }
+
+/* SIDEBAR */
 
 .logo {
     font-size: 30px;
@@ -48,23 +53,44 @@ body{
 }
 
 .nav-icon {
-    font-size: 22px;
     width: 28px;
-    text-align: center;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-body {
-    margin: 0;
-    background-color: #111f24;
-    font-family: Arial, sans-serif;
+/* TOP STATS */
+
+.top-stats {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+    position: absolute;
+    top: 18px;
+    right: 280px;
 }
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.stat-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* UNIT HEADER */
 
 .unit-header {
     width: 550px;
     height: 84px;
-    margin: 22px auto 0;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 36px 0 0 308px;
     padding: 14px 16px;
     background-color: #ff9600;
     border-radius: 14px;
@@ -86,6 +112,8 @@ body {
     color: white;
 }
 
+/* GUIDEBOOK BUTTON */
+
 .guidebook-button {
     height: 48px;
     padding: 0 16px;
@@ -96,12 +124,16 @@ body {
     font-weight: 700;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    cursor: pointer;
 }
+
+/* SECTION HEADINGS */
 
 .section-heading {
     width: 550px;
-    margin: 48px auto 0;
+    margin: 48px 0 0 308px;
     display: flex;
     align-items: center;
     gap: 14px;
@@ -119,27 +151,67 @@ body {
     font-weight: 700;
 }
 
-.top-stats {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-    position: absolute;
-    top: 8px;
-    right: 280px;
-}
+/* LEARNING PATH */
 
-.main-content {
-    flex: 1;
-    min-height: 100vh;
+.learning-path {
+    width: 550px;
+    height: 600px;
+    margin: 30px 0 0 308px;
     position: relative;
 }
 
+.start-section {
+    position: absolute;
+    width: 150px;
+    top: 20px;
+    left: 265px;
+}
+
+.lesson-3 {
+    position: absolute;
+    width: 70px;
+    top: 240px;
+    left: 325px;
+}
+
+.treasure-1 {
+    position: absolute;
+    width: 75px;
+    top: 335px;
+    left: 300px;
+}
+
+.lesson-5 {
+    position: absolute;
+    width: 70px;
+    top: 420px;
+    left: 260px;
+}
+
+.lesson-6 {
+    position: absolute;
+    width: 70px;
+    top: 510px;
+    left: 260px;
+}
+
+.character {
+    position: absolute;
+    width: 130px;
+    top: 150px;
+    left: 80px;
+}
+
+/* RIGHT SIDEBAR */
+
 .right-sidebar {
     position: absolute;
-    top: 90px;
-    right: 50px;
-    width: 350px;
+    top: 84px;
+    right: 275px;
+    width: 340px;
 }
+
+/* SUPER CARD */
 
 .super-card {
     border: 2px solid #33454d;
@@ -147,12 +219,20 @@ body {
     padding: 20px;
     color: white;
     margin-bottom: 16px;
+    position: relative;
+}
+
+.super-image {
+    position: absolute;
+    width: 95px;
+    top: 12px;
+    right: 15px;
+    object-fit: contain;
 }
 
 .super-label {
-    color: #19bff5;
-    font-size: 14px;
-    font-weight: 700;
+    width: 70px;
+    height: auto;
     margin-bottom: 12px;
 }
 
@@ -160,6 +240,19 @@ body {
     margin: 0 0 12px;
     font-size: 18px;
 }
+
+.super-card button {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 14px;
+    background-color: #4b4cff;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* LEAGUE CARD */
 
 .league-card {
     border: 2px solid #33454d;
@@ -190,14 +283,13 @@ body {
     display: flex;
     align-items: center;
     gap: 18px;
-    color:white;
+    color: white;
 }
 
 .league-icon {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
-    background-color: #403b46;
+    object-fit: contain;
     flex-shrink: 0;
 }
 
@@ -215,6 +307,8 @@ body {
     font-size: 14px;
     line-height: 1.4;
 }
+
+/* DAILY QUESTS */
 
 .daily-card {
     border: 2px solid #33454d;
@@ -260,6 +354,10 @@ body {
     flex-shrink: 0;
 }
 
+.quest-info {
+    min-width: 0;
+}
+
 .quest-info strong {
     font-size: 15px;
 }
@@ -269,6 +367,8 @@ body {
     color: #aebdc2;
     font-size: 13px;
 }
+
+/* QUEST PROGRESS */
 
 .progress-bar {
     width: 180px;
@@ -306,53 +406,15 @@ body {
     color: white;
     font-size: 11px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
-.learning-path {
-    width: 550px;
-    height: 600px;
-    margin: 30px auto 0;
-    position: relative;
-}
+/* QUEST REWARDS */
 
-.start-section {
-    position: absolute;
-    width: 150px;
-    top: 20px;
-    left: 265px;
-}
-
-.lesson-3 {
-    position: absolute;
-    width: 70px;
-    top: 240px;
-    left: 325px;
-}
-
-.treasure-1 {
-    position: absolute;
-    width: 75px;
-    top: 335px;
-    left: 300px;
-}
-
-.lesson-5 {
-    position: absolute;
-    width: 70px;
-    top: 420px;
-    left: 260px;
-}
-
-.lesson-6 {
-    position: absolute;
-    width: 70px;
-    top: 510px;
-    left: 260px;
-}
-
-.character {
-    position: absolute;
-    width: 130px;
-    top: 150px;
-    left: 80px;
+.reward-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: auto;
+    flex-shrink: 0;
 }
